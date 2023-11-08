@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Electronic Vehicles Survey Form</title>
+  <link rel="icon" type="image/x-icon" href="https://cdn.iconscout.com/icon/premium/png-256-thumb/survey-2580886-2152047.png">
+  <style>
+    .container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #555;
+}
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Electronic Vehicles Survey Form</h1>
+
+  <form action="/action_page.php">
+
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name">
+
+    <label for="email">Your Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email">
+
+    <label for="age">Your Age:</label>
+    <input type="number" id="age" name="age" placeholder="Enter your age">
+
+    <label for="ev_ownership">Do you currently own an electric vehicle?</label>
+    <select name="ev_ownership" id="ev_ownership">
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select>
+
+    <label for="ev_model">If yes, what make and model of electric vehicle do you own?</label>
+    <input type="text" id="ev_model" name="ev_model" placeholder="Enter your electric vehicle make and model">
+
+    <label for="ev_satisfaction">How satisfied are you with your electric vehicle?</label>
+    <select name="ev_satisfaction" id="ev_satisfaction">
+      <option value="very_satisfied">Very satisfied</option>
+      <somewhat_satisfied>Somewhat satisfied</option>
+      <option value="neutral">Neutral</option>
+      <somewhat_dissatisfied>Somewhat dissatisfied</option>
+      <very_dissatisfied>Very dissatisfied</option>
+    </select>
+
+    <label for="ev_improvement">What, if anything, would you like to see improved about electric vehicles?</label>
+    <textarea name="ev_improvement" id="ev_improvement" placeholder="Enter your thoughts on how electric vehicles can be improved"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+
+</div>
+
+</body>
+</html>
